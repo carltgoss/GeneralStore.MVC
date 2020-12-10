@@ -174,7 +174,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012101726228_InitialCreate.cs" />
+    <Compile Include="Migrations\202012101726228_InitialCreate.Designer.cs">
+      <DependentUpon>202012101726228_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012101930221_Customer-added.cs" />
+    <Compile Include="Migrations\202012101930221_Customer-added.Designer.cs">
+      <DependentUpon>202012101930221_Customer-added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012101958546_space_for_Full_Name.cs" />
+    <Compile Include="Migrations\202012101958546_space_for_Full_Name.Designer.cs">
+      <DependentUpon>202012101958546_space_for_Full_Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Product.cs" />
@@ -242,6 +257,11 @@
     <Content Include="Views\Product\Delete.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Customer\Delete.cshtml" />
+    <Content Include="Views\Customer\Edit.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -258,6 +278,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202012101726228_InitialCreate.resx">
+      <DependentUpon>202012101726228_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012101930221_Customer-added.resx">
+      <DependentUpon>202012101930221_Customer-added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012101958546_space_for_Full_Name.resx">
+      <DependentUpon>202012101958546_space_for_Full_Name.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
